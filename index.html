@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ausgaben-Tracker</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f9;
+		}
+		header {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 15px;
+			text-align: center;
+		}
+		.container {
+			margin: 20px;
+			padding: 15px;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.purchase {
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding: 10px;
+		}
+		.purchase:last-child {
+			border-bottom: none;
+		}
+		.purchase img {
+			width: 100px;
+			height: 100px;
+		}
+		.purchaspart{
+			display: inline-block;
+			margin-right: 15px;
+		}
+		.categories {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.category {
+			background: #e0e0e0;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 0.9em;
+		}
+		.add-btn {
+			background: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.add-btn:hover {
+			background: #45a049;
+		}
+		.total-sum {
+			text-align: right;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ausgaben-Tracker</h1>
+	</header>
+	<div class="container">
+		<h2>Einkäufe</h2>
+		<!-- Beispiel für einen Einkauf -->
+		<div class="purchase">
+			<h3>Einkauf #1</h3>
+			<div class="purchaspart" >
+				<img src="" alt="Rechnung">
+			</div>
+			<div class="purchaspart">
+				<p>Datum: 2024-12-10</p>
+				<p>Summe: <strong>50,00 €</strong></p>
+			</div>
+			<div class="purchaspart">
+				<h4>Teilsummen</h4>
+				<ul>
+					<li>Lebensmittel: 30,00 €</li>
+					<li>Haushalt: 20,00 €</li>
+				</ul>
+			</div>
+			<div class="purchaspart">
+				<h4>Kategorien</h4>
+				<div class="categories">
+					<span class="category">Lebensmittel</span>
+					<span class="category">Haushalt</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Button zum Hinzufügen -->
+		<button class="add-btn">Neuen Einkauf hinzufügen</button>
+
+		<!-- Gesamtsumme -->
+		<div class="total-sum">Gesamtsumme: <strong>50,00 €</strong></div>
+	</div>
+</body>
+</html>
